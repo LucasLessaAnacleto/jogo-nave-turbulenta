@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--cor-backGround);
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/* Utility Class */
+:root {
+    --cor-borderBody: #1e6091;
+    --cor-classMain: #2F5336;
+    --cor-backGround: #588157;
+    --cor-secuntary: #081c15;
+}
+.text{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;   
+}
+.contador{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;   
+    position: absolute;
+    top: 40%;
+    left:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 9999;
+    filter: blur(0px);
+    color: white;
+    font-size: 2.5em;
+}
+.invisivel{
+    filter:opacity(0);
+}
+/* end */
+
+.nave{
+    transform: scale(0.4);
+    position: absolute;
+}
+.windowGame{
+    border: 3px solid var(--cor-borderBody);
+    border-radius: 2%;
+    margin: 0 2vw;
+    width: 40vw;
+    height: 98vh;
+    background-image: url('./img/ceu - nave.png');
+    background-size: cover;
+    position:relative;
+}
+.info{
+    width: 40vw;
+    height: 98vh;
+    margin-left: 4vw;
+}
+.topo{
+    margin: 3vw auto 0;
+    text-align: center;
+    font-size: 1.5em;
+    color: #52b69a;/*#d6ccc2; var(--cor-borderBody);*/
+    background-color: var(--cor-classMain);
+    width: 70%;
+}
+.main{
+    font-size: 1.2em;
+    margin: 5vw;
+    height: 55vh;
+    border-radius: 5%;
+    background-color: var(--cor-backGround);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border:3px solid var(--cor-classMain);
+}
+button.start{
+    border:0.5px solid black;
+    margin-top: 3.5%;
+    height: 10%;
+    width: 40%;
+    font-size: 1.3em;
+    background-color:var(--cor-classMain);/*#1b4332;*/
+    color: white;
+}
+input{
+    height: 10%;
+    width: 80%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.9em;
+    text-align: center; 
+    background-color: #d6ccc2;
+    color: #011337;
+}
+label{
+    font-size: 1.1em;
+}
+.sideBar{
+    margin-left: 2vw;
+    height: 60%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.usuario{
+    position: absolute;
+    top: 234px;
+    left:1700px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 160px;
+    border:3px solid white;
+    border-radius: 10%;
+    color:white;
+    font-size: 1.5em;
+}
+.me{
+    height: 20%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transform: translateY(-40px);
+}
+.icon{
+    transform: scale(0.5);
+    filter: invert(100%)
+}
+.icon:hover{
+    transform: scale(0.6);
+}
+/* #1e6091 - borda window  3a5a40 2F5336 */
+/* #588157 - background body */
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Jogo Pousagem da Nave</title>
+        <link rel="stylesheet" href="./style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+        </style>
+    </head>
+    <body>
+        <div class="contador invisivel"></div>
+        <div class="container">
+            <div class="windowGame">
+                <img src="./img/nave.png" class="nave" style="left:297.5px;">
+            </div>
+
+            <div class="info">
+
+                <div class="topo text">
+                    <h1>Nave Turbulenta</h1>
+                </div>
+
+                <div class="main text">
+                    <label for="altitude">Altitude</label>
+                    <input type="text" name="altitude" class="text" readonly></input>
+
+                    <label for="velocidade">Velocidade da Nave</label>
+                    <input type="text" name="velocidade" class="text" readonly></input>
+
+                    <label for="combustivel">Compustível</label>
+                    <input type="text" name="combustivel" class="text" readonly></input>
+
+                    <button class="start text">Jogar</button>
+                </div>
+                
+            </div>
+
+            <div class="sideBar text">
+                <div class="usuario">
+                    <span class="lbRecord">RECORDE:</span>
+                    <span class="txtRecord">---</span>
+                </div>
+                <div class="me">
+                    <a href="https://github.com/LucasLessaAnacleto" target="_blank"><img src="./img/github.svg" alt="GitHub" class="icon"></a>    
+                    <a href="https://www.instagram.com/lucas_lessanacleto" target="_blank"><img src="./img/instagram.svg" alt="Instagram" class="icon"></a>  
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

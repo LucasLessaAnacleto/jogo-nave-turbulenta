@@ -19,7 +19,7 @@ body{
     --cor-borderBody: #1e6091;
     --cor-classMain: #2F5336;
     --cor-backGround: #588157;
-    --cor-secuntary: #081c15;
+    --cor-secuntary: black;
 }
 .text{
     font-family: 'Noto Sans', sans-serif;
@@ -139,6 +139,32 @@ label{
 }
 .icon:hover{
     transform: scale(0.6);
+}
+.instrucao{
+    transform: translateY(-24px);
+    display: flex;
+    justify-content: center;  
+}
+.containerInstru{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:var(--cor-secuntary);
+    width: 360px;
+    height: 80px;
+    border: 2px solid var(--cor-secuntary);
+    border-radius: 10%;
+}
+span.lbInstru{
+    font-size: 1.2em;
+}
+.containerInstru p{
+    font-weight: normal;
+    margin-top: 10px;
+}
+i{
+    font-weight: bold;
 }
 /* #1e6091 - borda window  3a5a40 2F5336 */
 /* #588157 - background body */

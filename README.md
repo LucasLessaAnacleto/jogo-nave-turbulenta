@@ -12,7 +12,7 @@ jogo simples feito em JavaScript com o objetivo de praticar lógica de programa�
 <br> - O jogo tem um objetivo simples, que é fazer uma boa aterrissagem
 <br> - Os elementos visuais como a nave, e o cenário do jogo, o céu no caso, foram feitos no figma ( <a href="https://www.figma.com/file/QSWJ2yfxv6Jmm4iLG94qa1/elementos-visuais-nave-turbulenta?node-id=0%3A1&t=WvgLFvB1rkWeJ2Oe-1">link</a> )
 <br> - apertando a tecla `espaço` liga o motor da nave diminuindo a velocidade que está descendo
-<br> - quando maior for a velocidade da nave em relaçãp significa que mais lento ela está caindo, ou seja é melhor
+<br> - quando maior for a velocidade da nave significa que mais lento ela está caindo, ou seja é melhor
 <br> - a parte visual da pagina em um monitor 1920x1080 fica assim:
 <br><br>
 <img src="https://github.com/LucasLessaAnacleto/LucasLessaAnacleto/blob/main/utils/nave-screen.jpg" width=100%>

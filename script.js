@@ -115,7 +115,7 @@ function ciclo(){
             desliga()
             nave.style.top = 745 + 'px'
             clearInterval(gameAction)
-            if(velocidade >= -6){
+            if(velocidade >= -6.7){
                 if(velocidade > recorde){
                     txtRecord.textContent = (velocidade).toFixed(2)
                     recorde = velocidade

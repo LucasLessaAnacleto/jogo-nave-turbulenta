@@ -20,12 +20,16 @@ for (let i = 0; i < input.length; i++){
 
 
 function liga(){
-    nave.src= "./img/nave2.png"
-    if(!motor){
-        nave.style.top = (parseFloat(nave.style.top)-16.3) + 'px'
+    if(combustivel > 0){
+        nave.src= "./img/nave2.png"
+        if(!motor){
+            nave.style.top = (parseFloat(nave.style.top)-16.3) + 'px'
+        }
+        combustivel--
+        motor = true
+    }else{
+        desliga()
     }
-    combustivel--
-    motor = true
 }
 
 function desliga(){
@@ -81,9 +85,7 @@ function pressButton(){
 
 addEventListener( "keydown", (event) => {
     if (event.keyCode === 32 && inGame){
-        if (combustivel > 0 ){
-            liga()   
-        }   
+        liga()        
     }
 } )
 
@@ -100,8 +102,8 @@ button.addEventListener( 'click' , () => {
 function ciclo(){
     if (inGame){  
         button.disabled = true;
-        if (motor){
-            aceleracao = 0.3
+        if (motor && combustivel > 0 ){
+            aceleracao = 0.25
         }else{
             aceleracao = -0.4
         }   
@@ -113,11 +115,11 @@ function ciclo(){
             desliga()
             nave.style.top = 745 + 'px'
             clearInterval(gameAction)
-            if(velocidade > recorde){
-                txtRecord.textContent = (velocidade).toFixed(2)
-                recorde = velocidade
-            }
             if(velocidade >= -6){
+                if(velocidade > recorde){
+                    txtRecord.textContent = (velocidade).toFixed(2)
+                    recorde = velocidade
+                }
                 setTimeout(()=>{ganhou()}, 1000)        
             }else{
                 explode()
@@ -135,6 +137,7 @@ function ciclo(){
 let mostra = () => {
     input[0].value = (altitude).toFixed(2)+' km de distância'
     input[1].value = (velocidade).toFixed(2)+ ' km por hora'
+    if(combustivel < 0) combustivel = 0
     input[2].value = combustivel+' litros'
 }
 
